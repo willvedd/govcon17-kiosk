@@ -5,13 +5,21 @@
 
 # Williamson Vedder :whale2:
 ###Developer @ Bluecadet
-###Sometimes Adjunct @ Drexel, Temple
+###Sometimes Adjunct Instructor
 
 ![inline  60%](diagrams/bc-logo.png)
 
 ^So who am I?
 
 ^Bluecadet is an Emmy Award-winning digital agency that creates world-class websites, mobile apps, interactive installations, and immersive environments.
+
+---
+
+#🤔
+
+^Who here has produced an interactive kiosk?
+
+^...with success?
 
 ---
 #Agenda 🗒
@@ -21,15 +29,7 @@
  - Decoupled overview
  - High-level kiosk architecture
  - Brief D8 api walkthroughs (simple, advanced )
- - Frontend Implementation (JS)
-
----
-
-#🤔
-
-^Who here has produced an interactive kiosk?
-
-^...with success?
+ - Frontend implementation
 
 ---
 
@@ -42,9 +42,11 @@ A computer terminal featuring specialized hardware and software that provides ac
  - Optional sensors and peripherals (RFID, proximity sensor, printer)
  - Driving immersive experiences
 
+^ Sometimes refered to as "Interactives"
+
 ---
 
-#Bluecadet Kiosk History
+#Bluecadet kiosk history
 
  - Early on, built kiosks in Flash ⚰
  - Transitioned to C++ (w/ Cinder)
@@ -54,20 +56,26 @@ A computer terminal featuring specialized hardware and software that provides ac
 
 ---
 
+![fit loop autoplay](videos/dogtags-demo.mov)
+
+^NWW2 Museum
+^Enough with the examples, dive right into the backend implementation
+
+---
+
+![fit loop autoplay](videos/ford.mov)
+
+^Gerald Ford Presidental Museum
+
+^Grand Rapids, MI 
+
+^(did you know he had a golden retriever?)
+
+---
+
 ![fit loop autoplay](videos/specialized-training.mp4)
 
 ^Specialized training
-
-
---- 
-
-![fit loop autoplay](videos/digital-weapons.mov)
-
-^Digital weapons
-
-^"The curators wanted people to have up-close detail look at delicate, priceless objects"
-
-^Enough with the examples, dive right into the backend implementation
 
 ---
 
@@ -77,7 +85,7 @@ A computer terminal featuring specialized hardware and software that provides ac
  - Devs don't want to make frequent content updates
  - Clients are likely familiar with Drupal, Wordpress, etc
  - Can be an all-in-one platform simultaneously serving many products
- - Possibly keep private from clients (dev only) 😯f.
+ - Possibly keep private from clients (dev only) 😯
 
 
 ^ Originally we just wanted to normalize data 
@@ -101,7 +109,7 @@ A computer terminal featuring specialized hardware and software that provides ac
 
 ---
 
-#Drupal in Kiosk Development
+#Drupal in kiosk development
 
 Drupal serves two roles:
 
@@ -148,7 +156,7 @@ Think: most Drupal sites now. Business as usual.
 
 ![left fit](diagrams/full-diagram.png)
 
-#Fully Decoupled
+#Fully decoupled
 
 Full separation between data layer and front-end layer. Drupal sends data via JSON to a JS framework (React, Angluar, Vue, etc.)
 
@@ -170,7 +178,7 @@ Full separation between data layer and front-end layer. Drupal sends data via JS
 
 ---
 
-#Decoupled Drupal: Bottom Line
+#Decoupled Drupal: bottom line
 
 The advent of Decoupled Drupal has allowed us to apply our talents to newer, more dynamic platforms with relative ease, especially kiosks
 
@@ -178,7 +186,7 @@ The advent of Decoupled Drupal has allowed us to apply our talents to newer, mor
 
 ---
 
-#Common Architecture Constraints
+#Common architecture constraints
 
  - Internet access? (often none)
  - Local network? (sometimes...)
@@ -189,13 +197,13 @@ The advent of Decoupled Drupal has allowed us to apply our talents to newer, mor
 
 ---
 
-#Example Architecture (Simple)
+#Example architecture (Simple)
 
 ![left fit](diagrams/kiosk-diagram-1.png)
 
 ---
 
-#Example Architecture (Intermediate)
+#Example architecture (Intermediate)
 
 ![left fit](diagrams/kiosk-diagram-2.png)
 
@@ -203,7 +211,7 @@ The advent of Decoupled Drupal has allowed us to apply our talents to newer, mor
 
 ---
 
-#Example Architecture (Advanced)
+#Example architecture (Advanced)
 
 ![left fit](diagrams/kiosk-diagram-3.png) 
 
@@ -219,7 +227,7 @@ The advent of Decoupled Drupal has allowed us to apply our talents to newer, mor
 
 ---
 
-#D8 Walkthrough: First steps
+#D8 Walkthrough: first steps
 
 - Clean install
 - Created "Song" content type:
@@ -256,7 +264,7 @@ Objective: make a music API
 
 --- 
 
-#D8 API Walkthrough (Advanced)
+#D8 API Walkthrough (advanced)
 
 - Create a custom module
 - Register API controller
@@ -267,7 +275,7 @@ Objective: make a music API
 
 ---
 
-#Demo: Create API Controller
+#Demo: Create API controller
 
 ![inline](diagrams/demo-controller.png)
 
@@ -280,6 +288,32 @@ Objective: make a music API
 ^ Transitioning away from the backend
 
 ^ Moving into the frontend
+
+
+---
+
+#General frontend approach
+
+ - HTML markup
+ - CSS Styles
+ - Javascript framework
+  - Angular, React, Vue, whatever
+  - Doesn't matter which
+
+^ The first two being things that all devs know
+
+^ The third being subjective, 
+
+^ Because I'm at at drupal conference I'll voice my opinion of react...
+
+---
+
+![fit loop autoplay](videos/dogtags-dev.mov)
+
+^ Want to take a minute and prove that this i
+
+^ I'm hoping this demystifies the development
+
 
 ---
 
@@ -310,17 +344,9 @@ Objective: make a music API
 
 ^Managing state especially a challenge especially for very complex/abstract kiosk applications
 
----
-
-![fit loop autoplay](videos/dogtags-demo.mov)
-
-^ Want to take a minute and prove that this i
-
-^ I'm hoping this demystifies the development
-
 --- 
 
-#Runtime/Deployment Challenges
+#Runtime/Deployment challenges
 
 - Preventing users from exiting application
 - Hiding browser chrome
@@ -389,7 +415,7 @@ Running chrome w/ flags `--kiosk --disable-pinch --overscroll-history-navigation
 
 - GPU-intensive (many pixels, 4k videos)
 
-- Complex gestures ( Multi-user 👯, )
+- Multi-user 👯
 
 - Abstract or gamified architecture
 
@@ -408,17 +434,19 @@ Look to build with Unity, Cinder (both can be coupled with Drupal).
 
 ![fit autoplay mute loop](videos/nukes.m4v)
 
-^Non-web tech kiosks example 2
+^Non-web tech kiosks example 1
 
 ---
 
 ![fit autoplay mute loop](videos/nasm.mov)
 
-^Non-web tech kiosks example 1
+^Non-web tech kiosks example 2
 
 ---
 
 ![fit loop autoplay mute](videos/digital-weapons.mov)
+
+^"The curators wanted people to have up-close detail look at delicate, priceless objects"
 
 ---
 
@@ -434,9 +462,9 @@ Look to build with Unity, Cinder (both can be coupled with Drupal).
 
  - Web tech approach:
   - Quicker ($$$)
-  - Easier to field a team
-  - Yields high quality products
-  - Is approaching feature parity (WebGL, WebAssembly)
+  - Easier to field team
+  - Same high-caliber execution
+  - Approaching feature parity vs non-web tech (WebGL, WebAssembly)
 
 ^ Perhaps this is just a temporary limit of talent and creativity w/ WebGL and other cool JS-graphics-things 
 
@@ -444,12 +472,17 @@ Look to build with Unity, Cinder (both can be coupled with Drupal).
 
 #Takeaways  :sunglasses:
 
- - 
+ - Web tech is production-ready
+ - Not appropriate for all solutions
+ - You can start developing today
 
 ^ Inspired some creativity
 
 ----
 
-#Presentation/demo files
+##Presentation materials
 
 ###[https://github.com/willvedd/govcon17-kiosk](https://github.com/willvedd/govcon17-kiosk)
+### . . . 
+### Will Vedder – @willvedd
+
