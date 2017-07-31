@@ -1,0 +1,6 @@
+custom_api.all:
+  path: 'api/kiosk.json'
+  defaults: { _controller: '\Drupal\custom_api\Controller\CustomAPIController::kiosk_api' }
+  methods:  [GET]
+  requirements:
+    _access: 'TRUE'

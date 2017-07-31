@@ -1,0 +1,5 @@
+name: Custom API
+type: module
+description: Custom RESTful API module for kiosks.
+author: Will Vedder
+core: 8.x
