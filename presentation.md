@@ -56,14 +56,14 @@ A computer terminal featuring specialized hardware and software that provides ac
 
 ---
 
-![fit loop autoplay](videos/dogtags-demo.mov)
+![fit loop autoplay](videos/dogtags-demo.mp4)
 
 ^NWW2 Museum
 ^Enough with the examples, dive right into the backend implementation
 
 ---
 
-![fit loop autoplay](videos/ford.mov)
+![fit loop autoplay](videos/ford.mp4)
 
 ^Gerald Ford Presidental Museum
 
@@ -308,7 +308,7 @@ Objective: make a music API
 
 ---
 
-![fit loop autoplay](videos/dogtags-dev.mov)
+![fit loop autoplay](videos/dogtags-dev.mp4)
 
 ^ Want to take a minute and prove that this i
 
@@ -407,7 +407,7 @@ Running chrome w/ flags `--kiosk --disable-pinch --overscroll-history-navigation
 
 ---
 
-![fit  autoplay mute loop](videos/dogtags-test.mov)
+![fit  autoplay mute loop](videos/dogtags-test.mp4)
 
 ---
 
@@ -438,13 +438,13 @@ Look to build with Unity, Cinder (both can be coupled with Drupal).
 
 ---
 
-![fit autoplay mute loop](videos/nasm.mov)
+![fit autoplay mute loop](videos/nasm.mp4)
 
 ^Non-web tech kiosks example 2
 
 ---
 
-![fit loop autoplay mute](videos/digital-weapons.mov)
+![fit loop autoplay mute](videos/digital-weapons.mp4)
 
 ^"The curators wanted people to have up-close detail look at delicate, priceless objects"
 
